@@ -30,9 +30,9 @@ Clone the repository and add credentions under ./creds/serviceaccount.json file
 Add the project ID in the variables.tf under the variable "project" and you can also give the same or appropriate name for the cluster using the variable "cluster_name".
 Save and quit the file. There you go.
 
-1. Initialize the terraform plan
-make init
-2. Plan the infrastruture to see the changes
+1. Initialize the terraform plan <br />
+make init <br />
+2. Plan the infrastruture to see the changes <br />
 make plan
 3. Build the infrastructure
 make apply
