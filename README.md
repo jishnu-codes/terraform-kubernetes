@@ -1,2 +1,2 @@
 # terraform-kubernetes
-Codes for creating, managing and maintaining infrastructure and kubernetes
+Experiments in infra development using terraform and kubernetes
