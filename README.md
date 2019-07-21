@@ -20,8 +20,9 @@ Using this, you will be able to do the following:
 3. Create a service account to be used for terraform to contact the GCP API for resource creation, the credentials for this
    can be saved under ./creds/serviceaccount.json file
    This is omitted in this repo as this contains the logins to the GCP account and is mentioned in the .gitignore file.
-4. Install the gcloud and kubectl utilities so that you can play around with GCP and Kubernetes cluster. 
+4. Install the terraform, gcloud and kubectl utilities so that you can play around with GCP and Kubernetes cluster. 
    The reference is given below to do the same:
+   Terraform: https://learn.hashicorp.com/terraform/getting-started/install.html
    Gloud: https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
    Kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/
 
