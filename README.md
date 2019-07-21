@@ -21,10 +21,10 @@ Using this, you will be able to do the following:
    can be saved under ./creds/serviceaccount.json file
    This is omitted in this repo as this contains the logins to the GCP account and is mentioned in the .gitignore file.
 4. Install the terraform, gcloud and kubectl utilities so that you can play around with GCP and Kubernetes cluster. 
-   The reference is given below to do the same:
-   Terraform: https://learn.hashicorp.com/terraform/getting-started/install.html
-   Gloud: https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu
-   Kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/
+   The reference is given below to do the same: <br />
+   Terraform: https://learn.hashicorp.com/terraform/getting-started/install.html <br />
+   Gloud: https://cloud.google.com/sdk/docs/quickstart-debian-ubuntu <br />
+   Kubectl: https://kubernetes.io/docs/tasks/tools/install-kubectl/ <br />
 
 # Getting Started
 Clone the repository and add credentions under ./creds/serviceaccount.json file
