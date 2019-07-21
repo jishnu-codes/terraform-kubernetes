@@ -13,3 +13,10 @@ Using this, you will be able to do the following:
 5. Create HPA for application pods
 6. Check load testing on applications
 7. Destroy the infrastructure
+
+# Preparation
+1. You must be having a GCP account ready (Free tier account can be used)
+2. Create a project under the account as the project ID should be passed to terraform code as variable.
+3. Create a service account to be used for terraform to contact the GCP API for resource creation, the credentials for this
+   can be saved under ./creds/serviceaccount.json file
+   This is omitted in this repo as this contains the logins to the GCP account and is mentioned in the .gitignore file.
