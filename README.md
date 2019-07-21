@@ -33,20 +33,20 @@ Save and quit the file. There you go.
 1. Initialize the terraform plan <br />
 make init <br />
 2. Plan the infrastruture to see the changes <br />
-make plan
-3. Build the infrastructure
-make apply
-4. Login to the kubernetes cluster
-make login
-5. Install helm package installer for the cluster
-make helm && make tiller
-6. Create an ingress controller for the cluster
-make ingress
-7. Create a staging namespace in the cluster and deploy guestbook application on it
-make staging
-8. Create a production namespace in the cluster and deploy guestbook application on it
-make production
-9. All of the above in a single command, ie create infrastrucure and deploy guestbook on kubernetes
-make all
-10. Desrtoy the infrastructure
-make destroy
+make plan <br />
+3. Build the infrastructure <br />
+make apply <br />
+4. Login to the kubernetes cluster <br />
+make login <br />
+5. Install helm package installer for the cluster <br />
+make helm && make tiller <br />
+6. Create an ingress controller for the cluster <br />
+make ingress <br />
+7. Create a staging namespace in the cluster and deploy guestbook application on it <br />
+make staging <br />
+8. Create a production namespace in the cluster and deploy guestbook application on it <br />
+make production <br />
+9. All of the above in a single command, ie create infrastrucure and deploy guestbook on kubernetes <br />
+make all <br />
+10. Desrtoy the infrastructure <br />
+make destroy <br />
