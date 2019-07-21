@@ -1,5 +1,6 @@
 # Usage
-Initialize the terraform plan
+1. Initialize the terraform plan
+
 make init
 Plan the infrastruture to see the changes
 make plan
