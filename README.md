@@ -30,25 +30,25 @@ Clone the repository and add credentions under ./creds/serviceaccount.json file
 Add the project ID in the variables.tf under the variable "project" and you can also give the same or appropriate name for the cluster using the variable "cluster_name".
 Save and quit the file. There you go. 
 
-*Initialize the terraform plan
+Initialize the terraform plan
 make init
-*Plan the infrastruture to see the changes
+Plan the infrastruture to see the changes
 make plan
-*Build the infrastructure
+Build the infrastructure
 make apply
-*Login to the kubernetes cluster
+Login to the kubernetes cluster
 make login
-*Install helm package installer for the cluster
+Install helm package installer for the cluster
 make helm && make tiller
-*Create an ingress controller for the cluster
+Create an ingress controller for the cluster
 make ingress
-*Create a staging namespace in the cluster and deploy guestbook application on it
+Create a staging namespace in the cluster and deploy guestbook application on it
 make staging
-*Create a production namespace in the cluster and deploy guestbook application on it
+Create a production namespace in the cluster and deploy guestbook application on it
 make production
-*All of the above in a single command, ie create infrastrucure and deploy guestbook on kubernetes
+All of the above in a single command, ie create infrastrucure and deploy guestbook on kubernetes
 make all
-*Desrtoy the infrastructure
+Desrtoy the infrastructure
 make destroy
 
 
