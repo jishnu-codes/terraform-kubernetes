@@ -51,3 +51,9 @@ make production <br />
 make all <br />
 10. Desrtoy the infrastructure <br />
 make destroy <br />
+
+#Testing <br />
+In order to test the application execute the below command to find the URL end point. <br />
+kubectl get ing --all-namespaces <br />O
+Please make an entry in the /etc/hosts file if you are using a linux machine with the hostname and address obtained in the result. <br />
+Open the web broweser and and access the URL, you will be able to get the guestbook application.
