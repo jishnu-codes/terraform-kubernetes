@@ -12,13 +12,19 @@ CentOS/RHEL systems: yum install epel-release && yum install siege
 
 ## Usage
 
--checkout the current status of the pods (HPA) for the frontend application
+-checkout the current status of the pods (HPA) for the frontend application in staging
 
-   "make show"
+   "make hpa-staging"
 
--Apply load on the pods which are part of the fronend application
+-checkout the current status of the pods (HPA) for the frontend application in production
 
-   "make stress"
+   "make hpa-production"
 
+-Apply load on the staging pods which are part of the fronend application
 
+   "make stag-stress"
+
+-Apply load on the production pods which are part of the fronend application
+
+   "make prod-stress"
 
