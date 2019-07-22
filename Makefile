@@ -42,6 +42,9 @@ staging:
 	kubectl apply -f ./kube-deployments/frontend-service.yaml -n staging
 	kubectl apply -f ./kube-deployments/ingress-resource-staging.yml -n staging
 
+hpa-staging: 
+	kubectl autoscale deployment frontend --cpu-percent=10 --min=1 --max=5 -n staging
+
 production:
 	kubectl create namespace production
 	kubectl apply -f ./kube-deployments/redis-master-deployment.yaml -n production
@@ -51,7 +54,10 @@ production:
 	kubectl apply -f ./kube-deployments/frontend-deployment.yaml -n production
 	kubectl apply -f ./kube-deployments/frontend-service.yaml -n production
 	kubectl apply -f ./kube-deployments/ingress-resource-production.yml -n production
-all: init plan apply login helm tiller ingress staging producton
+
+hpa-production:
+	kubectl autoscale deployment frontend --cpu-percent=10 --min=1 --max=5 -n production
+all: init plan apply login helm tiller ingress staging producton hpa-staging hpa-production
 	echo "Finished creating cluster for kubernetes and deployed the application to staging and production environments"
 
 destroy:
