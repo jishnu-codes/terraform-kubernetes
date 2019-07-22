@@ -1,10 +1,10 @@
-.PHONY: staging stag-stress prod-stress prod
+.PHONY: hpa-staging stag-stress prod-stress hpa-prod
 
 TAG		 := 0.0.1
 NAME     := frontend-load-tester
 
 
-staging:
+hpa-staging:
 	kubectl get hpa -n staging
 
 
@@ -16,5 +16,5 @@ prod-stress:
 	sh ./prod-apply-load.sh &
 
 
-prod:
+hpa-prod:
 	kubectl get hpa -n production
